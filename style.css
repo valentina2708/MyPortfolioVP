@@ -5,7 +5,6 @@ body {
   margin: 0;
   padding: 0;
   height: 30px;
-  line-height: 1;
 }
 a {
   text-decoration: none;
@@ -55,7 +54,7 @@ section.contenedor_banner {
   font-family: "Poppins", sans-serif;
   position: absolute;
   left: 50%;
-  top: 41%;
+  top: 35%;
   text-align: center;
   font-size: 38px;
   transform: translate(-50%, -50%);
@@ -65,7 +64,7 @@ section.contenedor_banner {
   display: flex;
   position: absolute;
   left: 45%;
-  top: 160%;
+  top: 140%;
   transform: translate(-50%, -50%);
   font-size: 25px;
 }
@@ -111,8 +110,8 @@ section.contenedor_banner {
 
 /*estilos banner*/
 
-.about__container{
-padding: 15px;
+.about__container {
+  padding: 15px;
 }
 
 section.about {
@@ -126,6 +125,7 @@ section.about {
 .about__title {
   margin: 30px;
   padding: 2px;
+  color: #2f576e;
 }
 
 .perfil__imagen2 {
@@ -141,91 +141,201 @@ section.about {
   background-image: url("/assets/sobreMi.jpg");
 }
 
+.perfil2 {
+  padding: 10px;
+}
+
 .about__paragraph1 {
   font-size: 30px;
-  padding: 10px;
+  color: #2f576e;
+  font-weight: 500;
+  padding: 2px;
 }
 
 .about__paragraph2 {
   font-size: 20px;
-  padding: 5px;
-  font-weight: 30px;
-  padding: 5px;
+  font-weight: 200;
+  margin: 1rem;
 }
+
 .container__texto {
-  width: 60%;
+  width: 50%;
   margin: auto;
+  padding: 10px;
+}
+
+.about__servicios ul {
+  list-style: none;
 }
 
 .about__servicios {
   margin: auto;
   width: 100%;
-  background-color: #1B1717;
-
+  background-color: #1b1717;
 }
 .contenidoAbout__servicios {
   display: flex;
-  justify-content:center;
-margin: 10px;
-padding: 10px;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
 }
 
 .contenidoPrincipal-about-servicios {
-  background-color: #2F576E;
+  background-color: #2f576e;
   height: 20vh;
   width: 28vh;
-  margin:  2%;
-  transition: .3s;
-	border-radius: 10px;
-	
+  margin: 2%;
+  transition: 0.3s;
+  border-radius: 10px;
 }
 
 .contenidoPrincipal-about-servicios a {
   text-decoration: none;
   display: flex;
-  justify-content:center ;
+  justify-content: center;
   color: #fdfdfd;
-  margin: 30px;
+  margin: 25px;
   font-size: 20px;
-font-weight: 15%;
+  font-weight: 15%;
 }
 
-.imagen__servicios{
-padding: 1.5px;
-}
-.contenidoPrincipal-about-servicios a:hover{
+.contenidoPrincipal-about-servicios a:hover {
   color: #000;
 }
-.contenidoPrincipal-about-servicios:hover{
-  background-color:#748B9C;
- 
-
+.contenidoPrincipal-about-servicios:hover {
+  background-color: #748b9c;
 }
-
 
 /*estilos skills*/
 section.skills {
-  display: flex;
-  flex-direction: column;
+  width: 600px;
+  margin: auto;
+  padding: 10px;
 }
 
 .skills__title {
-  display: flex;
-  justify-content: center;
-  padding: 30px;
+  text-align: center;
   font-weight: 70%;
   font-size: 40px;
 }
 
-.skills__line {
-  display: flex;
-  justify-content:center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  align-items: center;
+.skills__contenido {
+  width: 100%;
+  background-color: #748b9c;
+  border-radius: 4rem;
 }
 
-.skills__box,
-ul {
-  list-style: none;
+.porcen {
+  text-align: right;
+  padding: 10px;
+  color: #fdfdfd;
+  font-weight: 900;
 }
+
+.html {
+  background-color: #2f576e;
+  animation: html 2s forwards;
+  border-radius: 4rem;
+}
+
+.css {
+  background-color: #2f576e;
+  animation: css 2s forwards;
+  border-radius: 4rem;
+}
+
+.js {
+  background-color: #2f576e;
+  animation: js 2s forwards;
+  border-radius: 4rem;
+}
+
+.react {
+  background-color: #2f576e;
+  animation: react 2s forwards;
+  border-radius: 4rem;
+}
+
+.bst {
+  background-color: #2f576e;
+  animation: bst 2s forwards;
+  border-radius: 4rem;
+}
+
+@keyframes html {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes js {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 40%;
+  }
+}
+@keyframes react {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 30%;
+  }
+}
+@keyframes bst {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+.skills__line {
+  width: 100%;
+  height: 35%;
+}
+
+.skills_sub {
+  font-size: 16px;
+  margin: 2%;
+  text-align: center;
+}
+
+.imagen__skills {
+  display: flex;
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  border-radius: 80%;
+  padding: 5px;
+}
+
+/*estilos hobbies*/
+.contenido__unido{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin: 40px;
+  background-color: #1b1717;
+}
+

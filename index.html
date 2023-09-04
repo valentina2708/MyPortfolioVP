@@ -80,13 +80,12 @@
     <!-- Sección sobre mi -->
     <section class="about" id="sobre-mi">
       <div class="about__container">
-        <p class="about__paragraph1">Hola a todos</p>
-
+        <h3 class="about__title">Sobre Mi</h3>
         <div class="perfil2">
           <div class="perfil__imagen2 perfil__imagen--sobremi"></div>
         </div>
-        <h3 class="about__title">Sobre Mi</h3>
         <div class="container__texto">
+          <h2 class="about__paragraph1">Hola a todos</h2>
           <span class="about__paragraph2"
             >Mi nombre es valentina desarrolladora frontend, apasionada por la
             tecnologia y la programacion, me gusta crear paginas web con diseños
@@ -96,73 +95,71 @@
       </div>
 
       <div class="about__servicios">
-          <ul class="contenidoAbout__servicios">
-            <li class="contenidoPrincipal-about-servicios"><a href="#">Diseño web</a> <img class="imagen__servicios" src="./assets/diseñoweb.png"></li>
-            <li class="contenidoPrincipal-about-servicios"><a href="#">Software</a> <img class="imagen__servicios" src="./assets/software.png"> </li>
-            <li class="contenidoPrincipal-about-servicios"><a href="#"> Aplicaciones</a> <img class="imagen__servicios" src="./assets/aplicaciones.png"></li>
-            <li class="contenidoPrincipal-about-servicios"><a href="#"> Diseño UX</a><img class="imagen__servicios" src="./assets/diseñoux.png"></li>
-          </ul>
+        <ul class="contenidoAbout__servicios">
+          <li class="contenidoPrincipal-about-servicios">
+            <a href="#">Diseño web</a>
+            <img class="imagen__servicios" src="./assets/diseñoweb.png" />
+          </li>
+          <li class="contenidoPrincipal-about-servicios">
+            <a href="#">Software</a>
+            <img class="imagen__servicios" src="./assets/software.png" />
+          </li>
+          <li class="contenidoPrincipal-about-servicios">
+            <a href="#"> Aplicaciones</a>
+            <img class="imagen__servicios" src="./assets/aplicaciones.png" />
+          </li>
+          <li class="contenidoPrincipal-about-servicios">
+            <a href="#"> Diseño UX</a
+            ><img class="imagen__servicios" src="./assets/diseñoux.png" />
+          </li>
+        </ul>
       </div>
-  
     </section>
 
     <!-- Sección de Skills -->
     <section class="skills" id="skills">
       <h3 class="skills__title">Skills</h3>
+
       <div class="skills__line">
-        <div class="skills__box">
-          <ul>
-            <li class="skills__img"><img src="assets\htlm.png" /></li>
-            <li class="skills__name">HTML 5</li>
-          </ul>
+        <h4 class="skills_sub">HTML</h4>
+        <img class="imagen__skills" src="assets/html.png" />
+
+        <div class="skills__contenido">
+          <div class="porcen html">80%</div>
         </div>
 
-        <div class="skills__box">
-          <ul>
-            <li class="skills__img"><img src="assets\js_icon.png" alt="" /></li>
-            <li class="skills__name">Javascript</li>
-          </ul>
+        <h4 class="skills_sub">CSS</h4>
+        <img class="imagen__skills" src="assets/css.png" />
+
+        <div class="skills__contenido">
+          <div class="porcen css">70%</div>
         </div>
 
-        <div class="skills__box">
-          <ul>
-            <li class="skills__img">
-              <img src="assets\php_icon.png" alt="" />
-            </li>
-            <li class="skills__name">PHP</li>
-          </ul>
+        <h4 class="skills_sub">Javascript</h4>
+        <img class="imagen__skills" src="assets/javascrip.png" />
+
+        <div class="skills__contenido">
+          <div class="porcen js">40%</div>
         </div>
 
-        <div class="skills__box">
-          <ul>
-            <li class="skills__img">
-              <img src="assets\nodejs_icon.png" alt="" />
-            </li>
-            <li class="skills__name">Node JS</li>
-          </ul>
+        <h4 class="skills_sub">React</h4>
+        <img class="imagen__skills" src="assets/react.png" />
+
+        <div class="skills__contenido">
+          <div class="porcen react">30%</div>
         </div>
 
-        <div class="skills__box">
-          <ul>
-            <li class="skills__img">
-              <img src="assets\react_icon.png" alt="" />
-            </li>
-            <li class="skills__name">React</li>
-          </ul>
-        </div>
+        <h4 class="skills_sub">Bootstrap</h4>
+        <img class="imagen__skills" src="assets/bootstrap.png" />
 
-        <div class="skills__box">
-          <ul>
-            <li class="skills__img">
-              <img src="assets\css_icon.png" alt="" />
-            </li>
-            <li class="skills__name">CSS</li>
-          </ul>
+        <div class="skills__contenido">
+          <div class="porcen bst">50%</div>
         </div>
       </div>
     </section>
 
     <!-- Sección de Hobbies -->
+    <div class="contenido__unido">
     <section class="hobbies" id="hobbies">
       <h3 class="hobbies__title">Hobbies</h3>
       <div class="hobbies__line">
@@ -219,5 +216,37 @@
         </div>
       </div>
     </section>
+
+        <!-- Sección de Formación académica -->
+        <section class="academic" id="formacion">
+          <h2 class="academic__title" >Formación académica</h2>
+          <div class="academic__courses">
+              <div class="academic__courses__box">
+                  <ul class="academic__courses__list">
+                      <!-- Pon el logotipo de la institución de formación -->
+                      <li class="academic__courses__item__img"><img src="assets\ufpr_logo.png"></li>
+                      <li class="academic__courses__item__title"><h4>Análisis de datos</h4></li>
+                      <li class="academic__courses__item__subtitle"><p>2018 - UFPR</p></li>
+                  </ul>
+              </div>
+              <div class="academic__courses__box">
+                  <ul class="academic__courses__list">
+                      <!--Pon el logotipo de la institución de formación -->
+                      <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
+                      <li class="academic__courses__item__title"><h4>Formación en UX Design</h4></li>
+                      <li class="academic__courses__item__subtitle"><p>2019 - Alura</p></li>
+                  </ul>
+              </div>
+              <div class="academic__courses__box">
+                  <ul class="academic__courses__list">
+                      <!-- Pon el logotipo de la institución de formación -->
+                      <li class="academic__courses__item__img"><img src="assets\ufrj_logo.png"></li>
+                      <li class="academic__courses__item__title"><h4>Posgrado en diseño</h4></li>
+                      <li class="academic__courses__item__subtitle"><p>En curso - UFRJ</p></li>
+                  </ul>
+              </div>
+          </div>
+      </section>
+    </div>
   </body>
 </html>
