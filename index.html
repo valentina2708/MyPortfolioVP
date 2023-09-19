@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <title>Mi Portafolio</title>
+    <title>Portafolio</title>
   </head>
 
   <body>
@@ -29,9 +29,6 @@
             <a class="menu__link" href="#skills">Skills</a>
           </li>
           <li class="menu__list__item">
-            <a class="menu__link" href="#hobbies">Hobbies</a>
-          </li>
-          <li class="menu__list__item">
             <a class="menu__link" href="#formacion">Formación</a>
           </li>
           <li class="menu__list__item">
@@ -44,36 +41,32 @@
       </nav>
     </section>
 
-    <section class="contenedor_banner">
-      <img class="contenedor__imagen" src="assets/banner.jpeg" alt="banner" />
-      <div class="title__div">
-        <div class="title__container">
-          <div class="perfil">
-            <div class="perfil__imagen perfil__imagen--valen">
-              <span class="perfil__nombre">Valentina</span>
-            </div>
-          </div>
-          <h2 class="title__bio">Hola mundo</h2>
-          <h3 class="title__subsection">Frontend Developer</h3>
-          <ul class="title__network">
-            <!-- Pon los enlaces de tus redes sociales favoritas -->
-            <li class="title__network__item">
-              <a class="title__link" href=""
-                >Github <img src="assets/logo_github.png" />
-              </a>
-            </li>
-            <li class="title__network__item">
-              <a class="title__link" href=""
-                >Linkedin <img src="assets/logo_linkedin.png"
-              /></a>
-            </li>
-            <li class="title__network__item">
-              <a class="title__link" href=""
-                >Currículo <img src="assets/logo_cv.png"
-              /></a>
-            </li>
-          </ul>
+    <section class="banner">
+      <div class="container__banner">
+        <img class="img__banner" src="assets/portafoliobanner.jpeg" />
+        <h1 class="title__principal">Hola Mundo</h1>
+        <div class="perfil">
+          <div class="perfil__imagen perfil__imagen--valen"></div>
         </div>
+      </div>
+      <div class="container__links">
+        <ul class="title__network">
+          <li class="title__network__item">
+            <a class="title__link" href=""
+              >Github <img src="assets/logo_github.png" />
+            </a>
+          </li>
+          <li class="title__network__item">
+            <a class="title__link" href=""
+              >Linkedin <img src="assets/logo_linkedin.png"
+            /></a>
+          </li>
+          <li class="title__network__item">
+            <a class="title__link" href=""
+              >Currículo <img src="assets/logo_cv.png"
+            /></a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -81,20 +74,19 @@
     <section class="about" id="sobre-mi">
       <div class="about__container">
         <h3 class="about__title">Sobre Mi</h3>
-        <div class="perfil2">
-          <div class="perfil__imagen2 perfil__imagen--sobremi"></div>
-        </div>
         <div class="container__texto">
-          <h2 class="about__paragraph1">Hola a todos</h2>
-          <span class="about__paragraph2"
-            >Mi nombre es valentina desarrolladora frontend, apasionada por la
+          <p class="about__paragraph2">
+            Mi nombre es valentina desarrolladora frontend, apasionada por la
             tecnologia y la programacion, me gusta crear paginas web con diseños
             unicos y profesionales.
-          </span>
+          </p>
         </div>
       </div>
 
       <div class="about__servicios">
+        <p class="about__paragraph3">
+          Brindando las mejores soluciones en diseño y desarrollo de software
+        </p>
         <ul class="contenidoAbout__servicios">
           <li class="contenidoPrincipal-about-servicios">
             <a href="#">Diseño web</a>
@@ -121,132 +113,187 @@
       <h3 class="skills__title">Skills</h3>
 
       <div class="skills__line">
-        <h4 class="skills_sub">HTML</h4>
+        <h3 class="skills_sub">HTML</h3>
         <img class="imagen__skills" src="assets/html.png" />
-
         <div class="skills__contenido">
           <div class="porcen html">80%</div>
         </div>
 
-        <h4 class="skills_sub">CSS</h4>
+        <h3 class="skills_sub">CSS</h3>
         <img class="imagen__skills" src="assets/css.png" />
-
         <div class="skills__contenido">
           <div class="porcen css">70%</div>
         </div>
 
-        <h4 class="skills_sub">Javascript</h4>
+        <h3 class="skills_sub">Javascript</h3>
         <img class="imagen__skills" src="assets/javascrip.png" />
-
         <div class="skills__contenido">
           <div class="porcen js">40%</div>
         </div>
 
-        <h4 class="skills_sub">React</h4>
+        <h3 class="skills_sub">React</h3>
         <img class="imagen__skills" src="assets/react.png" />
-
         <div class="skills__contenido">
           <div class="porcen react">30%</div>
         </div>
 
-        <h4 class="skills_sub">Bootstrap</h4>
+        <h3 class="skills_sub">Bootstrap</h3>
         <img class="imagen__skills" src="assets/bootstrap.png" />
-
         <div class="skills__contenido">
           <div class="porcen bst">50%</div>
         </div>
       </div>
     </section>
 
-    <!-- Sección de Hobbies -->
-    <div class="contenido__unido">
-    <section class="hobbies" id="hobbies">
-      <h3 class="hobbies__title">Hobbies</h3>
-      <div class="hobbies__line">
-        <div class="hobbies__box">
-          <ul>
-            <li class="hobbies__img"><img src="assets\skate_icon.png" /></li>
-            <li class="hobbies__name">Patinaje</li>
+    <section class="academic" id="formacion">
+      <h2 class="academic__title">Formación académica</h2>
+      <div class="academic__courses">
+        <div class="academic__courses__box">
+          <ul class="academic__courses__list">
+            <!-- Pon el logotipo de la institución de formación -->
+            <li class="academic__courses__item__img">
+              <img class="img_academic" src="assets/unimayor.jpg" />
+            </li>
+            <li class="academic__courses__item__title">
+              <h4>Desarrollo de Software</h4>
+            </li>
+            <li class="academic__courses__item__subtitle">
+              <p>2022 - Unimayor</p>
+            </li>
           </ul>
         </div>
-
-        <div class="hobbies__box">
-          <ul>
-            <li class="hobbies__img">
-              <img src="assets\guitar_icon.png" alt="" />
+        <div class="academic__courses__box">
+          <ul class="academic__courses__list">
+            <!--Pon el logotipo de la institución de formación -->
+            <li class="academic__courses__item__img">
+              <img class="img_academic" src="assets/alura.png" />
             </li>
-            <li class="hobbies__name">Tocar bajo</li>
+            <li class="academic__courses__item__title">
+              <h4>Formación Frontend</h4>
+            </li>
+            <li class="academic__courses__item__subtitle">
+              <p>2023 - Alura</p>
+            </li>
           </ul>
         </div>
-
-        <div class="hobbies__box">
-          <ul>
-            <li class="hobbies__img">
-              <img src="assets\headphones_icon.png" alt="" />
+        <div class="academic__courses__box">
+          <ul class="academic__courses__list">
+            <!-- Pon el logotipo de la institución de formación -->
+            <li class="academic__courses__item__img">
+              <img class="img_academic" src="assets/google.png" />
             </li>
-            <li class="hobbies__name">Oir música</li>
-          </ul>
-        </div>
-
-        <div class="hobbies__box">
-          <ul>
-            <li class="hobbies__img">
-              <img src="assets\tv_icon.png" alt="" />
+            <li class="academic__courses__item__title">
+              <h4>Curso en Diseño UX</h4>
             </li>
-            <li class="hobbies__name">Ver séries</li>
-          </ul>
-        </div>
-
-        <div class="hobbies__box">
-          <ul>
-            <li class="hobbies__img">
-              <img src="assets\forkspoon_icon.png" alt="" />
+            <li class="academic__courses__item__subtitle">
+              <p>En curso - Google</p>
             </li>
-            <li class="hobbies__name">Cocinar</li>
-          </ul>
-        </div>
-
-        <div class="hobbies__box">
-          <ul>
-            <li class="hobbies__img">
-              <img src="assets\camera_icon.png" alt="" />
-            </li>
-            <li class="hobbies__name">Tomar fotos</li>
           </ul>
         </div>
       </div>
     </section>
 
-        <!-- Sección de Formación académica -->
-        <section class="academic" id="formacion">
-          <h2 class="academic__title" >Formación académica</h2>
-          <div class="academic__courses">
-              <div class="academic__courses__box">
-                  <ul class="academic__courses__list">
-                      <!-- Pon el logotipo de la institución de formación -->
-                      <li class="academic__courses__item__img"><img src="assets\ufpr_logo.png"></li>
-                      <li class="academic__courses__item__title"><h4>Análisis de datos</h4></li>
-                      <li class="academic__courses__item__subtitle"><p>2018 - UFPR</p></li>
-                  </ul>
-              </div>
-              <div class="academic__courses__box">
-                  <ul class="academic__courses__list">
-                      <!--Pon el logotipo de la institución de formación -->
-                      <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
-                      <li class="academic__courses__item__title"><h4>Formación en UX Design</h4></li>
-                      <li class="academic__courses__item__subtitle"><p>2019 - Alura</p></li>
-                  </ul>
-              </div>
-              <div class="academic__courses__box">
-                  <ul class="academic__courses__list">
-                      <!-- Pon el logotipo de la institución de formación -->
-                      <li class="academic__courses__item__img"><img src="assets\ufrj_logo.png"></li>
-                      <li class="academic__courses__item__title"><h4>Posgrado en diseño</h4></li>
-                      <li class="academic__courses__item__subtitle"><p>En curso - UFRJ</p></li>
-                  </ul>
-              </div>
+    <!-- Sección de Formación académica -->
+
+    <h2 class="experience__section__title" id="xp">Mi portafolio</h2>
+    <section class="proyectos__portafolio">
+      <div class="portafolio__container">
+        <section class="portafolio__item">
+          <img
+            class="portafolio__item__img"
+            src="assets/tohutao.png"
+            alt="tohuto"
+          />
+          <section class="portafolio__text">
+            <h2>Tohutao</h2>
+            <p>Aplicación movil de recetas</p>
+          </section>
+        </section>
+
+        <section class="portafolio__item">
+          <img
+            class="portafolio__item__img"
+            src="assets/inmobiliaria.jpeg"
+            alt="inmobiliaria"
+          />
+          <section class="portafolio__text">
+            <h2>Casas y lotes</h2>
+            <p>Diseño y desarrollo de aplicación web de casas y lotes</p>
+          </section>
+        </section>
+
+        <section class="portafolio__item">
+          <img
+            class="portafolio__item__img"
+            src="assets/glucoapp.png"
+            alt="glucoapp"
+          />
+          <section class="portafolio__text">
+            <h2>GlucoApp</h2>
+            <p>Aplicación web de salud</p>
+          </section>
+        </section>
+      </div>
+    </section>
+
+    <section class="formcontato" id="contacto">
+      <div class="formcontato__contacto">
+        <div class="formcontato__img">
+          <img class="img" src="assets/sobre mi.webp" />
+        </div>
+
+      
+
+          <form class="formcontato__form" name="form">
+            <div class="formcontato__text">
+              <h2 class="formcontato__title">Contacto</h2>
+              <h3 class="formcontato__subtext">
+                Complete el siguiente formulario y me pondré en contacto con usted
+                lo antes posible.
+              </h3>
+            <div class="form__container">
+            <div class="form__group">
+              <input type="text" id="name" class="form__input" placeholder="" />
+              <label for="name" class="form__label">Nombre:</label>
+              <span class="form__line"></span>
+            </div>
+            <div class="form__group">
+              <input
+                type="text"
+                id="email"
+                class="form__input"
+                placeholder=""
+              />
+              <label for="email" class="form__label">Email:</label>
+              <span class="form__line"></span>
+            </div>
+
+            <div class="form__group">
+              <input
+                type="text"
+                id="asunto"
+                class="form__input"
+                placeholder=""
+              />
+              <label for="asunto" class="form__label">Asunto:</label>
+              <span class="form__line"></span>
+            </div>
+
+           <input type="submit" class="form__submit" value="Enviar">
           </div>
-      </section>
-    </div>
+
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Footer -->
+    <section class="footer">
+      <div class="footer__rodape">
+        <p>Desarrollado por Fulana de Tal</p>
+        <p>2022</p>
+      </div>
+    </section>
   </body>
 </html>
