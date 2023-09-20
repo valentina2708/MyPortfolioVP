@@ -5,7 +5,7 @@ body {
   padding: 0;
   background-color: #e5e5f7;
   opacity: 1;
-  background-image: radial-gradient(#84A7A1 0.5px, #e5e5f7 0.5px);
+  background-image: radial-gradient(#84a7a1 0.5px, #e5e5f7 0.5px);
   background-size: 10px 10px;
 }
 a {
@@ -16,12 +16,50 @@ a {
 
 section.menu {
   align-items: center;
-  background: #f9f9f9;
   display: flex;
   justify-content: space-between;
   padding-left: 2rem;
   padding-right: 2rem;
   background-color: #21213c;
+}
+
+@media screen and (min-width: 0) {
+  section.menu {
+    padding: 0 1rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  section.menu {
+    padding: 0 2rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.menu {
+    padding: 0 5rem;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 0) {
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    display: block;
+  }
 }
 
 .menu__header {
@@ -52,21 +90,72 @@ section.menu {
   opacity: 0.7;
 }
 
+@media screen and (min-width: 0) {
+  .img__banner {
+    height: calc(90vh);
+  }
+}
+@media screen and (min-width: 320px) {
+  .img__banner {
+    height: calc(90vh);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .img__banner {
+    height: calc(90vh);
+  }
+}
+
+
+
 .title__principal {
   color: #21213c;
   position: absolute;
-  left: 51%;
-  top: 10%;
+  left: 50%;
+  top: 5%;
   text-align: center;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 30%;
+  animation: typing 4s steps(38) 1s 1 normal both;
+  width: 0;
+overflow: hidden;
+white-space: nowrap;
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 0) {
+  .title__principal {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title__principal {
+    font-size: 4.0625rem;
+  }
 }
 .perfil {
   position: absolute;
   left: 38%;
   top: 80%;
+
 }
+
 .perfil__imagen {
   height: 320px;
   width: 350px;
@@ -75,6 +164,28 @@ section.menu {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 70%;
+    animation: bounce; 
+  animation-duration: 0.2s;
+}
+
+@media screen and (min-width: 0) {
+  .perfil__imagen {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .perfil__imagen {
+    height: 220px;
+    width: 250px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .perfil__imagen {
+    height: 320px;
+    width: 350px;
+  }
 }
 
 .perfil__imagen--valen {
@@ -87,6 +198,33 @@ section.menu {
   width: 30%;
   top: 70%;
   left: 69%;
+}
+
+@media screen and (min-width: 0) {
+  .container__links {
+    position: absolute;
+
+    top: 100%;
+    left: 20%;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .container__links {
+    position: absolute;
+    top: 100%;
+    left: 30%;
+ 
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__links {
+    position: absolute;
+    margin: auto 0;
+    top: 70%;
+    left: 69%;
+  }
 }
 
 .title__network {
@@ -113,6 +251,21 @@ section.menu {
   margin-bottom: 4rem;
 }
 
+@media screen and (min-width: 0) {
+  .about__container {
+    margin: 12%;
+    margin-top: 9rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__container {
+    margin: 13%;
+    margin-bottom: 4rem;
+  }
+}
+
 section.about {
   margin-bottom: 3rem;
   text-align: center;
@@ -137,7 +290,9 @@ section.about {
   font-weight: 200;
   margin: 0.5rem;
   text-align: center;
-  text-indent: 2em;
+  animation: backInLeft; 
+  animation-duration: 3s;
+
 }
 
 .about__servicios ul {
@@ -160,6 +315,29 @@ section.about {
   justify-content: center;
   margin: 10px;
   padding: 10px;
+}
+
+@media screen and (min-width: 0) {
+  .contenidoAbout__servicios {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .container__links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contenidoAbout__servicios {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+  }
 }
 
 .contenidoPrincipal-about-servicios {
@@ -208,6 +386,27 @@ section.skills {
   flex-direction: column;
   width: 100%;
   height: 50%;
+}
+
+@media screen and (min-width: 0) {
+  .skills__line {
+    width: 70%;
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .skills__line {
+    width: 70%;
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills__line {
+    width: 100%;
+    height: 50%;
+  }
 }
 
 .skills__contenido {
@@ -322,10 +521,44 @@ section.academic {
   padding: 10px;
 }
 
+@media screen and (min-width: 0) {
+  section.academic {
+    height: 850px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.academic {
+    height: 350px;
+  }
+}
+
 .academic__courses {
   display: flex;
   text-align: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 0) {
+  .academic__courses {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .academic__courses {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .academic__courses {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 .academic__title {
@@ -338,8 +571,29 @@ section.academic {
   background-color: #f9f9f9;
   border-radius: 5px;
   width: 40vh;
-  height: 30vh;
+  height: 20vh;
   margin: 1.25rem;
+}
+
+@media screen and (min-width: 0) {
+  .academic__courses__box {
+    width: 40vh;
+    height: 30vh;
+  }
+}
+
+@media screen and (min-width: 420) {
+  .academic__courses__box {
+    width: 40vh;
+    height: 30vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .academic__courses__box {
+    width: 40vh;
+    height: 28vh;
+  }
 }
 
 .academic__courses__list {
@@ -376,12 +630,49 @@ section.academic {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 0) {
+  .portafolio__container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 420px) {
+  .portafolio__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portafolio__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .portafolio__item {
   width: 30%;
   position: relative;
   overflow: hidden;
 }
 
+@media screen and (min-width: 0) {
+  .portafolio__item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 420) {
+  .portafolio__item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portafolio__item {
+    width: 30%;
+  }
+}
 .portafolio__item .portafolio__item__img {
   height: 400px;
   width: 400px;
@@ -426,7 +717,6 @@ section.academic {
   height: 80vh;
   margin: auto;
   padding: 15px;
- 
 }
 .formcontato__contacto {
   margin-top: 7rem;
@@ -434,7 +724,23 @@ section.academic {
   justify-content: space-around;
 }
 
-.formcontato__img .img{
+@media screen and (min-width: 0) {
+  .formcontato__contacto {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .formcontato__contacto {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.formcontato__img .img {
   width: 400px;
   height: 350px;
   position: relative;
@@ -442,6 +748,25 @@ section.academic {
   top: 20%;
   border-radius: 50%;
 }
+
+@media screen and (min-width: 0) {
+  .formcontato__img .img {
+    left: 5%;
+    top: 10%;
+    width: 150px;
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .formcontato__img .img {
+    left: 20%;
+    top: 20%;
+    width: 400px;
+    height: 350px;
+  }
+}
+
 .formcontato__form {
   display: flex;
   flex-direction: column;
@@ -455,33 +780,45 @@ section.academic {
   text-align: center;
 }
 
-.form__container{
+@media screen and (min-width: 0) {
+  .formcontato__form {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .formcontato__form {
+    margin-top: 1rem;
+  }
+}
+
+.form__container {
   margin-top: 2em;
   display: grid;
   gap: 2em;
 }
 
-.formcontato__title{
+.formcontato__title {
   color: #21213c;
   font-size: 30px;
   font-weight: 500;
 }
 
-.formcontato__subtext{
+.formcontato__subtext {
   font-weight: 300;
 }
 
-.form__group{
+.form__group {
   position: relative;
   color: #21213c;
 }
 
-.form__input{
+.form__input {
   width: 100%;
   background: none;
   color: #21213c;
   font-size: 1rem;
-  padding: .6em .3em;
+  padding: 0.6em 0.3em;
   border: none;
   outline: none;
   border-bottom: 1px solid #748b9c;
@@ -489,48 +826,58 @@ section.academic {
 }
 
 .form__input:focus + .form__label,
-.form__input :not(:placeholder-shown) + .form__label{
-  transform: translateY(-12px) scale(.7);
+.form__input :not(:placeholder-shown) + .form__label {
+  transform: translateY(-12px) scale(0.7);
   transform-origin: left top;
   color: #748b9c;
 }
 
-.form__label{
+.form__label {
   color: #21213c;
   cursor: pointer;
   position: absolute;
   top: 0;
   left: 5px;
   transform: translateY(10px);
-  transition: transform .5s, color .3s;
+  transition: transform 0.5s, color 0.3s;
 }
 
-.form__submit{
+.form__submit {
   background: #21213c;
   color: #f9f9f9;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  padding: .8em 0;
+  padding: 0.8em 0;
   border: none;
-  border-radius: .5em;
+  border-radius: 0.5em;
   cursor: pointer;
 }
 
+.footer {
 
-
-
-
-
-
-
-
-
-
-section.footer {
   margin-top: 8rem;
   background-color: #21213c;
   width: 100%;
- height: 20vh;
+  height: 20vh;
+}
+
+@media screen and (min-width: 0) {
+  section.footer {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.footer {
+   margin: 2rem;
+  }
+}
+
+.footer__rodape {
+  color: #f9f9f9;
+  display: flex;
+ flex-direction: column;
+ text-align: center;
 }
 
