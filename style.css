@@ -154,6 +154,8 @@ white-space: nowrap;
   position: absolute;
   left: 38%;
   top: 80%;
+  height: 350px;
+  width: 350px;
 
 }
 
@@ -165,7 +167,7 @@ white-space: nowrap;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 70%;
-    animation: bounce; 
+  animation: bounce; 
   animation-duration: 0.2s;
 }
 
@@ -189,9 +191,7 @@ white-space: nowrap;
   }
 }
 
-.perfil__imagen--valen {
-  background-image: url("/assets/personal.jpg");
-}
+
 
 .container__links {
   position: absolute;
